@@ -93,7 +93,7 @@ function MusicPlayer() {
                 type="range"
                 value={progress}
                 onChange={handleSeek}
-                className="w-full mt-4"
+                className="w-full mt-4 cursor-move"
                 min="0"
                 max="100"
             />
@@ -106,13 +106,13 @@ function MusicPlayer() {
 
             {/* 播放控制按钮 */}
             <div className="flex items-center gap-4 mt-4">
-                <button onClick={() => changeTrack("prev")} className="p-2 bg-gray-300 dark:bg-gray-700 rounded-full hover:bg-blue-500">
+                <button onClick={() => changeTrack("prev")} className="p-2 bg-gray-300 dark:bg-gray-700 rounded-full hover:bg-blue-500 cursor-pointer">
                     <SkipBack size={24}/>
                 </button>
-                <button onClick={togglePlayPause} className="p-4 bg-blue-500 rounded-full hover:bg-blue-300">
+                <button onClick={togglePlayPause} className="p-4 bg-blue-500 rounded-full hover:bg-blue-300 cursor-pointer">
                     {isPlaying ? <Pause size={32}/> : <Play size={32}/>}
                 </button>
-                <button onClick={() => changeTrack("next")} className="p-2 bg-gray-300 dark:bg-gray-700 rounded-full hover:bg-blue-500">
+                <button onClick={() => changeTrack("next")} className="p-2 bg-gray-300 dark:bg-gray-700 rounded-full hover:bg-blue-500 cursor-pointer">
                     <SkipForward size={24}/>
                 </button>
             </div>
