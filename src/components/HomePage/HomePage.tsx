@@ -34,15 +34,17 @@ function HomePage() {
                 <ResellerButton link="https://slimehack.shop" text={"Slimehack(天卡)"}/>
             </div>
             <p>除此处列出的，其它购买地址都<strong>未经授权</strong>，请谨慎甄别。</p>
-            <FakeCaptcha textBefore="你是人类吗?"
-                         textDuring="正在验证..."
-                         textAfterSuccess="成功!"
-                         textAfterFailure="你是人机。"
-                         success={Math.floor(Math.random() * 20) + 1 === 1}
-                         duration={2000}
-                         dark={false}
-                         link={"https://lunarclient.top"}
-            />
+            <div className={"transition ease-in-out hover:scale-110 duration-300"}>
+                <FakeCaptcha textBefore="你是人类吗?"
+                             textDuring="正在验证..."
+                             textAfterSuccess="成功!"
+                             textAfterFailure="你是人机。"
+                             success={Math.floor(Math.random() * 20) + 1 === 1}
+                             duration={2000}
+                             dark={false}
+                             link={"https://lunarclient.top"}
+                />
+            </div>
             <p>这个验证码是彩蛋, 多试几次可能会成功.</p>
         </Card>
 
