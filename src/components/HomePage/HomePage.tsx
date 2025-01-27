@@ -4,6 +4,7 @@ import LinkButton from "../LinkButton/LinkButton.tsx";
 import Link from "../Link/Link.tsx";
 import MusicPlayer from "../MusicPlayer/MusicPlayer.tsx";
 import FakeCaptcha from "../FakeCaptcha/FakeCaptcha.tsx";
+import UserFeedback from "../UserFeedback/UserFeedback.tsx";
 
 function HomePage() {
     return (<>
@@ -17,7 +18,6 @@ function HomePage() {
                 <LinkButton href="https://discord.lunarclient.top">Discord服务器</LinkButton>
                 <LinkButton href="https://t.me/earthsworth">Telegram群组</LinkButton>
                 <LinkButton href={"/join"}>加入我们</LinkButton>
-                {/*<div onClick={() => document.documentElement.classList.toggle('dark')}>换颜色</div>*/}
             </div>
             <p>打个广告 第三方LunarClient启动器 <Link href="https://lunarclient.top">lunarclient.top</Link></p>
         </Card>
@@ -25,6 +25,11 @@ function HomePage() {
         <Card title={"不买听听歌也行"}>
             <MusicPlayer/>
             <p>仅供娱乐, 吸烟有害健康.</p>
+        </Card>
+
+        <Card title={"用户看法"}>
+            <UserFeedback username={"cubewhy"} text={"买了, 孩子很喜欢吃"}/>
+            <UserFeedback username={"Manthe"} text={"Get 99.9% off on VAPE purchases at getvape.today"}/>
         </Card>
 
         <Card title={"分销商"}>
