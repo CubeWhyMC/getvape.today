@@ -28,7 +28,7 @@ function HomePage() {
         </Card>
 
         <Card title={"分销商"}>
-            <div className="flex flex-wrap justify-start mt-5">
+            <div className="flex flex-row flex-wrap justify-start mt-5 space-x-2 sm:space-x-4">
                 <ResellerButton link="https://t.me/cubewhy" text={"Pay with crypto (USDT...)"}/>
                 <ResellerButton link="https://shop.hln.asia" text={"HLN-Boost(两天卡/周卡/月卡)"}/>
                 <ResellerButton link="https://slimehack.shop" text={"Slimehack(天卡)"}/>

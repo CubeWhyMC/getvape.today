@@ -80,7 +80,8 @@ function MusicPlayer() {
     }, [currentTrack]);
 
     return (
-        <div className="flex flex-col items-center bg-white/10 border border-white/30 shadow-lg p-6 rounded-lg backdrop-blur-2xl w-96 hover:scale-125 transition-all ease-in-out duration-300">
+        <div
+            className="flex flex-col items-center bg-white/10 border border-white/30 shadow-lg p-6 rounded-lg backdrop-blur-2xl w-full sm:w-96 hover:scale-110 sm:hover:scale-125 transition-all ease-in-out duration-300">
             <h2 className="text-xl font-bold">{tracks[currentTrack].title}</h2>
             <p className="font-bold text-gray-500 dark:text-gray-300">{tracks[currentTrack].author}</p>
 
