@@ -8,7 +8,7 @@ import smokeAndDream from "../../assets/songs/smoke-and-dream.mp3"
 import snowLeopard from "../../assets/songs/snow-leopard-and-dingzhen.mp3"
 
 const tracks = [
-    {title: "满特与丁真", author: "xrl, TianmuTNT, cubewhy, suno, ChatGPT", src: mantheAndDingZhen},
+    {title: "满特与丁真", author: "xrk, TianmuTNT, cubewhy, suno, ChatGPT", src: mantheAndDingZhen},
     {title: "丁真和电子烟", author: "TianmuTNT, suno, ChatGPT", src: dingzhenAndRelx},
     {title: "丁真：雾与梦", author: "ChatGPT, suno", src: smokeAndDream},
     {title: "顶针与雪豹", author: "ChatGPT, suno", src: snowLeopard}
