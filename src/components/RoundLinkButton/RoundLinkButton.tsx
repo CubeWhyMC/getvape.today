@@ -6,7 +6,7 @@ interface Props {
     children: React.ReactNode;
 }
 
-function LinkButton(props: Props) {
+function RoundLinkButton(props: Props) {
     const navigate = useNavigate();
     const shouldUseRouter = props.href.startsWith("/");
 
@@ -22,4 +22,4 @@ function LinkButton(props: Props) {
     </>);
 }
 
-export default LinkButton;
+export default RoundLinkButton;

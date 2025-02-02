@@ -1,6 +1,6 @@
 import Card from "../Card/Card.tsx";
-import ResellerButton from "../ResellerButton/ResellerButton.tsx";
-import LinkButton from "../LinkButton/LinkButton.tsx";
+import RectangleLinkButton from "../RectangleLinkButton/RectangleLinkButton.tsx";
+import RoundLinkButton from "../RoundLinkButton/RoundLinkButton.tsx";
 import Link from "../Link/Link.tsx";
 import MusicPlayer from "../MusicPlayer/MusicPlayer.tsx";
 import FakeCaptcha from "../FakeCaptcha/FakeCaptcha.tsx";
@@ -15,9 +15,9 @@ function HomePage() {
             <p><strong>售后支持：</strong>我们拥有<strong>友好的售后支持</strong>，若您在使用过程中遇到问题，请及时联系售后。*
             </p>
             <div className={"flex flex-row"}>
-                <LinkButton href="https://discord.lunarclient.top">Discord服务器</LinkButton>
-                <LinkButton href="https://t.me/earthsworth">Telegram群组</LinkButton>
-                <LinkButton href={"/join"}>加入我们</LinkButton>
+                <RoundLinkButton href="https://discord.lunarclient.top">Discord服务器</RoundLinkButton>
+                <RoundLinkButton href="https://t.me/earthsworth">Telegram群组</RoundLinkButton>
+                <RoundLinkButton href={"/join"}>加入我们</RoundLinkButton>
             </div>
             <p>打个广告 第三方LunarClient启动器 <Link href="https://lunarclient.top">lunarclient.top</Link></p>
         </Card>
@@ -34,11 +34,12 @@ function HomePage() {
 
         <Card title={"分销商"}>
             <div className="flex flex-row flex-wrap justify-start mt-5 space-x-2 sm:space-x-4">
-                <ResellerButton link="https://t.me/cubewhy" text={"Pay with crypto (USDT...)"}/>
-                <ResellerButton link="https://shop.hln.asia" text={"HLN-Boost(两天卡/周卡/月卡)"}/>
-                <ResellerButton link="https://slimehack.shop" text={"Slimehack(天卡)"}/>
+                <RectangleLinkButton link="https://t.me/cubewhy" text={"Pay with crypto (USDT...)"}/>
+                <RectangleLinkButton link="https://shop.hln.asia" text={"HLN-Boost(两天卡/周卡/月卡)"}/>
+                <RectangleLinkButton link="https://slimehack.shop" text={"Slimehack(天卡)"}/>
             </div>
-            <p>除此处列出的，其它购买地址都<strong>未经授权</strong>，请谨慎甄别。</p>
+            <p>除此处列出的，其它购买地址都<strong className={"important"}>未经授权</strong>，请谨慎甄别。</p>
+            <p>我们建议您<strong className={"important"}>货比三家</strong>,因为你买贵了开发者也不会因此收入多。</p>
             <div className={"transition ease-in-out hover:scale-110 duration-300"}>
                 <FakeCaptcha textBefore="你是人类吗?"
                              textDuring="正在验证..."
@@ -51,6 +52,15 @@ function HomePage() {
                 />
             </div>
             <p>这个验证码是彩蛋, 多试几次可能会成功.</p>
+        </Card>
+
+        <Card title={"常用链接"}>
+            <div className="flex flex-row flex-wrap justify-start mt-5 space-x-2 sm:space-x-4">
+                <RectangleLinkButton link="https://vape.lunarclient.top/user/redeem" text={"注册"}/>
+                <RectangleLinkButton link="https://t.me/qbychannel" text={"下载瑞克发射器(Telegram)"}/>
+            </div>
+            <p>不要从别的地方下载文件,可能是大老鼠.</p>
+            <p>* 如果你找不到文件,请查看<strong className={"important"}>置顶消息</strong></p>
         </Card>
 
         <Card footnote={true}>

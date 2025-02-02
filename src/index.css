@@ -5,3 +5,7 @@ body {
     @apply bg-white text-black dark:bg-[#2c3e50] dark:text-[#ecf0f1]
     font-sans leading-relaxed max-w-[800px] mx-auto p-5 transition-colors duration-500;
 }
+
+.important {
+    @apply font-extrabold text-red-500;
+}
