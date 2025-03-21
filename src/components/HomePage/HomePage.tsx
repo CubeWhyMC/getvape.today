@@ -17,14 +17,14 @@ function HomePage() {
             <div className={"flex flex-row"}>
                 <RoundLinkButton href="https://discord.lunarclient.top">Discord服务器</RoundLinkButton>
                 <RoundLinkButton href="https://t.me/earthsworth">Telegram群组</RoundLinkButton>
-                <RoundLinkButton href={"/join"}>加入我们</RoundLinkButton>
+                {/* <RoundLinkButton href={"/join"}>加入我们</RoundLinkButton> */}
             </div>
-            <p>打个广告 第三方LunarClient启动器 <Link href="https://lunarclient.top">lunarclient.top</Link></p>
+            {/* <p>打个广告 第三方LunarClient启动器 <Link href="https://lunarclient.top">lunarclient.top</Link></p> */}
         </Card>
 
         <Card title={"不买听听歌也行"}>
             <MusicPlayer/>
-            <p>仅供娱乐, 吸烟有害健康.</p>
+            <p>仅供娱乐.</p>
         </Card>
 
         <Card title={"用户看法"}>
@@ -33,13 +33,14 @@ function HomePage() {
         </Card>
 
         <Card title={"分销商"}>
-            <div className="flex flex-row flex-wrap justify-start mt-5 space-x-2 sm:space-x-4">
+            <p>暂时无法获取顶针租号玩, 过几天再来可能就有了</p>
+            {/* <div className="flex flex-row flex-wrap justify-start mt-5 space-x-2 sm:space-x-4">
                 <RectangleLinkButton link="https://t.me/cubewhy" text={"Pay with crypto (USDT...)"}/>
                 <RectangleLinkButton link="https://shop.hln.asia" text={"HLN-Boost(两天卡/周卡/月卡)"}/>
                 <RectangleLinkButton link="https://slimehack.shop" text={"Slimehack(天卡)"}/>
             </div>
             <p>除此处列出的，其它购买地址都<strong className={"important"}>未经授权</strong>，请谨慎甄别。</p>
-            <p>我们建议您<strong className={"important"}>货比三家</strong>,因为你买贵了开发者也不会因此收入多。</p>
+            <p>我们建议您<strong className={"important"}>货比三家</strong>,因为你买贵了开发者也不会因此收入多。</p> */}
             <div className={"transition ease-in-out hover:scale-110 duration-300"}>
                 <FakeCaptcha textBefore="你是人类吗?"
                              textDuring="正在验证..."
