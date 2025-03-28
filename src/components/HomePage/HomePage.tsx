@@ -65,8 +65,8 @@ function HomePage() {
         </Card>
 
         <Card footnote={true}>
-            <p>* 吸烟有害健康,本页面展示的是虚拟产品VAPE, 是我的世界的类固醇, 并不是含<Link
-                href={"https://zh.wikipedia.org/zh-cn/%E5%B0%BC%E5%8F%A4%E4%B8%81"}>尼古丁</Link>的产品.</p>
+            <p>* 吸烟有害健康,本页面展示的是虚拟产品VAPE，是我的世界的类固醇，并不是含<Link
+                href={"https://zh.wikipedia.org/zh-cn/%E5%B0%BC%E5%8F%A4%E4%B8%81"}>尼古丁</Link>的产品。</p>
             <p>* CNY/USD汇率作7.165计算，官网售价为9.99USD/月，租号玩官方定价为15CNY/月，最终结果约为80%。</p>
             <p>* 租号玩支持使用v4/lite, v3/v2等暂不支持。</p>
             <p>* 退款政策由分销商制定, 开发者无法处理退款请求。</p>
@@ -74,7 +74,7 @@ function HomePage() {
             <p>* 由于账号成本，租号玩官方服务需要收费；核心源代码在GitHub开源（<a
                 href="https://github.com/CubeWhyMC/DingZhenServlet">点击这里</a>），若您不想使用官方服务，请自行搭建。</p>
             <p>Made by <Link href="https://github.com/CubeWhyMC">CubeWhy</Link> & HXY group members | Page designed
-                by ;
+                by
                 <Link href="https://github.com/TianmuTNT">TianmuTNT</Link></p>
         </Card>
     </>);
