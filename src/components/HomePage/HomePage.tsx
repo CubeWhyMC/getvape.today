@@ -74,7 +74,7 @@ function HomePage() {
             <p>* 由于账号成本，租号玩官方服务需要收费；核心源代码在GitHub开源（<a
                 href="https://github.com/CubeWhyMC/DingZhenServlet">点击这里</a>），若您不想使用官方服务，请自行搭建。</p>
             <p>Made by <Link href="https://github.com/CubeWhyMC">CubeWhy</Link> & HXY group members | Page designed
-                by
+                by&nbsp;
                 <Link href="https://github.com/TianmuTNT">TianmuTNT</Link></p>
         </Card>
     </>);
