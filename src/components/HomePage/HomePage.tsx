@@ -75,7 +75,7 @@ function HomePage() {
                 href="https://github.com/CubeWhyMC/DingZhenServlet">点击这里</a>），若您不想使用官方服务，请自行搭建。</p>
             <p>Made by <Link href="https://github.com/CubeWhyMC">CubeWhy</Link> & HXY group members | Page designed
                 by &nbsp;
-                <Link href="https://space.bilibili.com/1674232182">天沐TNT</Link></p>
+                <Link href="https://github.com/TianmuTNT">TianmuTNT</Link></p>
         </Card>
     </>);
 }
